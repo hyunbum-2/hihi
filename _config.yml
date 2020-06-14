@@ -2,8 +2,8 @@
 title: Anti Covid-19
 description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
 cover: assets/images/1.jpg
-logo: assets/images/logo.png
-favicon: assets/images/favicon.png
+logo: assets/images/1.jpg
+favicon: assets/images/1.jpg
 baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
 url: "https://samanyougarg.com" # the base hostname & protocol for your site
 
