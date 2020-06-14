@@ -4,7 +4,36 @@ pagination:
   enabled: true
 ---
 
+<div id="results">
+  <h1><!-- `key` listing for `value` --></h1>
 
+  <ul class="results">
+    <!-- results lists -->
+  </ul>
+</div>
+
+<!— Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
+</div>
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="/dest/jekyll-search.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search2.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      })
+</script>
   <figure class="ampstart-image-fullpage-hero m0 relative mb4">
     <amp-img width="404" height="720" alt="Cover" layout="responsive" src="{{ site.baseurl }}{{ site.cover }}" media="(max-width: 415px)"></amp-img>
     <amp-img height="720" alt="Cover" layout="fixed-height" src="{{ site.baseurl }}{{ site.cover }}" media="(min-width: 416px)"></amp-img>
