@@ -5,7 +5,7 @@ cover: assets/images/1.jpg
 logo: assets/images/1.jpg
 favicon: assets/images/1.jpg
 baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://samanyougarg.com" # the base hostname & protocol for your site
+url: "https://hyunbum-2.github.io" # the base hostname & protocol for your site
 
 pagination:
 
